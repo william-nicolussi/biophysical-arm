@@ -1,9 +1,10 @@
 # python version: 3.10
 --only-binary=:all:
 mujoco
-numpy ==1.26.4
+numpy
 pillow
 pybind11-stubgen
+pydantic
 matplotlib
 imageio
 imageio[ffmpeg] #both?
@@ -11,9 +12,9 @@ scikit-video @ git+https://github.com/scikit-video/scikit-video.git@master
 #the version on pypi of this myosuite dependency depends on python2
 myosuite
 #just for the test policy:
-torch ==2.0.1
+torch
 mjrl @ git+https://github.com/aravindr93/mjrl.git@pvr_beta_1vk
-panda
+pandas
 zipp
 simple_pid
 xarray

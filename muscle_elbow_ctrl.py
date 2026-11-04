@@ -18,9 +18,12 @@ SIMLEN = 5  # seconds
 FPS = 30
 SEED = 1
 TIMESTEP = 0.001
+
 def main():
 
+    # Modello mancante
     spec = m.MjSpec.from_file("models/myo_sim/elbow/myoelbow_1dof6muscles.xml") #this model has gravity
+    #spec = m.MjSpec.from_file("C:/Users/HP/AppData/Local/Programs/Python/Python312/Lib/site-packages/myosuite/simhive/myo_sim/elbow/myoelbow_1dof6muscles.xml")
     model = spec.compile()
     model.opt.timestep = TIMESTEP
     data = m.MjData(model)
